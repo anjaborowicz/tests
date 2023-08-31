@@ -5,7 +5,7 @@ def angle_between_points(x1, y1, x2, y2):
     angle = math.atan2(y2 - y1, x2 - x1)
     return math.degrees(angle)  # Convert radians to degrees
 
-def VisiblePoints(center_x, center_y, cone_degrees, max_direction, points):
+def VisiblePoints(center_x, center_y, cone_degrees, direction, points):
     # Create a list to store the visible points
     visible_points = []
     half_cone = cone_degrees / 2
@@ -25,7 +25,7 @@ def VisiblePoints(center_x, center_y, cone_degrees, max_direction, points):
     return visible_points
 
 # Create a list of points
-visible_points = [
+visible_points_data = [
     (28, 42, 1, "North"),
     (27, 46, 2, "East"),
     (16, 22, 3, "South"),
