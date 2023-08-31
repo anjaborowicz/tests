@@ -5,7 +5,7 @@ def angle_between_points(x1, y1, x2, y2):
     angle = math.atan2(y2 - y1, x2 - x1)
     return math.degrees(angle)  # Convert radians to degrees
 
-def VisiblePoints(center_x, center_y, cone_degrees, direction, points):
+def VisiblePoints(center_x, center_y, cone_degrees, max_direction, points):
     # Create a list to store the visible points
     visible_points = []
     half_cone = cone_degrees / 2
@@ -14,7 +14,7 @@ def VisiblePoints(center_x, center_y, cone_degrees, direction, points):
         # Calculate the angle between the center point and the current point
         angle = angle_between_points(center_x, center_y, x, y)
         # Calculate the difference between the current point's angle and the direction
-        angle_diff = abs(angle - direction)
+        angle_diff = abs(angle - max_direction)
         # If the difference is greater than 180, subtract 360 from the difference
         if angle_diff > 180:
             angle_diff = 360 - angle_diff
