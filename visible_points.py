@@ -1,7 +1,3 @@
-# Points data (X, Y, Number, Direction): (28, 42, 1, North), (27, 46, 2, East), (16, 22, 3, South), (40, 50, 4, West), (8, 6, 5, North),  (6, 19, 6, East), (28, 5, 7, South), (39, 36, 8, West), (12, 34, 9, North), (36, 20, 10, East), (22, 47, 11, South), (33, 19, 12, West), (41, 18, 13, North), (41, 34, 14, East),  (14, 29, 15, South), (6, 49, 16, West), (46, 50, 17, North), (17, 40, 18, East), (28, 26, 19, South), (2, 12, 20, West)
-# Given the data above, make a function where given a Point value returns all points in a visible cone that extends in the direction given a visible cone value made up of degrees and maximum direction. For instance, the function VisiblePoints(1,45,20) returns an array with one object (27,46,2,East)
-# The function should be able to handle any number of points and any number of visible cones.
-
 import math
 
 # Function to calculate the angle between two points
